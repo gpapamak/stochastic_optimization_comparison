@@ -20,8 +20,8 @@ clear;
 close all;
 
 % load data
-load ../../data/mnist/all_data_0.001.mat
-outdir = 'results_all_data_0.001';
+load(fullfile('data', 'mnist', 'all_data_0.001.mat'));
+outdir = fullfile('results', 'mnist', 'all_data_0.001');
 mkdir(outdir);
 
 % negative log likelihood and gradient of regularized softmax regression
@@ -48,7 +48,7 @@ batch_size = [1, 10, 100];
 
 %% gd
 options.step = 0.5;
-[~, info_gd] = gd(w_init, f, df, f(w_star), options);
+[~, info_gd] = gd(w_init, f, df, f(w_star), options); %#ok<ASGLU>
 save(fullfile(outdir, 'gd.mat'), 'info_gd');
 clear info_gd;
 

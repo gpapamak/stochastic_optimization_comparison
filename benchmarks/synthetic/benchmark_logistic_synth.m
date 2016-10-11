@@ -13,8 +13,8 @@ clear;
 close all;
 
 % load synthetic data
-load ../../data/synthetic/data_100d_1k.mat;
-outdir = 'results_100d_1k';
+load(fullfile('data', 'synthetic', 'data_100d_100.mat'));
+outdir = fullfile('results', 'synthetic', 'data_100d_100');
 mkdir(outdir);
 
 % negative log likelihood and its gradient
@@ -40,7 +40,7 @@ batch_size = [1, 10, 100];
 
 %% gd
 options.step = 0.05;
-[~, info_gd] = gd(w_init, f, df, f(w_star), options);
+[~, info_gd] = gd(w_init, f, df, f(w_star), options); %#ok<ASGLU>
 save(fullfile(outdir, 'gd.mat'), 'info_gd');
 clear info_gd;
 

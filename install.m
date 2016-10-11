@@ -8,9 +8,9 @@ addpath(fullfile(pwd, 'opt'));
 addpath(fullfile(pwd, 'util'));
 
 addpath(fullfile(pwd, 'benchmarks'));
-addpath(fullfile(pwd, 'benchmarks/mnist'));
-addpath(fullfile(pwd, 'benchmarks/synthetic'));
+addpath(fullfile(pwd, 'benchmarks', 'mnist'));
+addpath(fullfile(pwd, 'benchmarks', 'synthetic'));
 
 addpath(fullfile(pwd, 'data'));
-addpath(fullfile(pwd, 'data/mnist'));
-addpath(fullfile(pwd, 'data/synthetic'));
+addpath(fullfile(pwd, 'data', 'mnist'));
+addpath(fullfile(pwd, 'data', 'synthetic'));

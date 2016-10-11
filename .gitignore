@@ -1,0 +1,12 @@
+# specific files and folders
+.DS_store
+results/
+
+# text editor's temporary files
+*~
+
+# data files
+*.mat
+*.idx1-ubyte
+*.idx3-ubyte
+

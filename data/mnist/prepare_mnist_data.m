@@ -61,4 +61,5 @@ options.verbose = true;
 w_star = gd(w_init, f, df, -inf, options);
 
 % save dataset and softmax weights
-save('all_data_0.001.mat', 'x_trn', 'x_tst', 'y_trn', 'y_tst', 'N', 'D', 'L', 'w_star', 'lambda');
+savefile = fullfile('data', 'mnist', 'all_data_0.001.mat');
+save(savefile, 'x_trn', 'x_tst', 'y_trn', 'y_tst', 'N', 'D', 'L', 'w_star', 'lambda');

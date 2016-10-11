@@ -14,7 +14,7 @@
 clear;
 
 % parameters
-N = 1e+2;
+N = 100;
 D = 100;
 w_true = 0.5 * ones(D, 1);
 lambda = 0.1;
@@ -37,4 +37,5 @@ options.max_epoch = 1e+5;
 w_star = gd(w_true, f, df, -inf, options);
 
 % save data and weights
-save data_100d_100.mat x y N D w_true w_star lambda;
+savefile = fullfile('data', 'synthetic', 'data_100d_100.mat');
+save(savefile, 'x', 'y', 'N', 'D', 'w_true', 'w_star', 'lambda');
