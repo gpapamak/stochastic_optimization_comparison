@@ -1,7 +1,7 @@
 # Comparison of Modern Stochastic Optimization Algorithms
 
 Code that reproduces the experiments in the technical report:
-> G. Papamakarios. _Comparison of Modern Stochastic Optimization Algorithms_. Technical report. University of Edinburgh. 2014.
+> G. Papamakarios, _Comparison of Modern Stochastic Optimization Algorithms_, Technical report, University of Edinburgh, 2014.
 > [[pdf]](http://www.maths.ed.ac.uk/~richtarik/papers/Papamakarios.pdf) [[bibtex]](http://homepages.inf.ed.ac.uk/s1459647/bibtex/modern_stochastic_optimization.bib)
 
 The experiments benchmark four optimization algorithms on two convex problems. The algorithms are:
